@@ -1,7 +1,14 @@
+import logo from '../../assets/svg/logo-muse.svg';
+import styles from './Header.module.scss';
+
+const { header, header__logo} = styles;
+
 const Header:React.FC = () => {
   return(
     <>
-    <div>header</div>
+    <header className={header}>
+      <img src={logo} className={header__logo} alt='logo'/>
+    </header>
     </>
   )
 };
