@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+.product {
+  height: 340px;
+
+  &__image {
+    height: 159px;
+    background-color: #FFC800;
+  }
+
+  &__about {
+    padding: 1rem;
+  }
+
+  &__name {
+
+  }
+
+  &__description {
+    @include B1;
+  }
+
+  &__details {
+
+  }
+}
