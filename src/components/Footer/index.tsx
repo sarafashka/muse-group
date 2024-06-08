@@ -1,16 +1,5 @@
+import { footerLinks } from '../../content/content';
 import styles from './Footer.module.scss';
-
-const footerLinks = [
-  {name: 'Help Center',
-   url: 'https://support.animaapp.com/en/'
-  },
-  {name: 'Privacy Policy',
-  url: 'https://forum.animaapp.com/privacy'
- },
-  {name: 'Terms of Service',
-  url: 'https://forum.animaapp.com/tos'
-  },
-]
 
 const {footer, footer__link} = styles;
 

@@ -1,3 +1,4 @@
+import { socialLinks } from "../../content/content";
 import Footer from "../Footer";
 import FormEmail from "../FormEmail";
 import Header from "../Header";
@@ -5,7 +6,7 @@ import ProductCard from "../ProductCard";
 
 import styles from './App.module.scss';
 
-const { hero, hero__description, hero__image, hero__caption, hero__wrapper } = styles;
+const { hero, hero__description, hero__image, hero__caption, hero__wrapper, social, social__description, social__links } = styles;
 
 const App = () => {
   return (
@@ -30,7 +31,24 @@ const App = () => {
         </div>
       </section>
 
-      <ProductCard/>
+      <section className="container">
+          <ProductCard/>
+      </section>
+
+      <section className={social}>
+        <div className="container">
+          <div className = {social__links}>
+            {socialLinks.map((item, index)=> (
+                  <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
+                     <img src={item.icon} alt={item.caption}/>
+              </a>
+            ))}
+          </div>
+          <div className={social__description}>You're not just a student - you're part of a vibrant community of
+           like-minded individuals united by a passion for frontend development. Collaborate, innovate, and grow 
+           alongside fellow learners and industry professionals as you embark on this exciting journey together.</div>
+        </div>
+      </section>
 
       <footer><Footer/></footer>
       
