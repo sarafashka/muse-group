@@ -3,23 +3,15 @@
 /* Common Container */
 @mixin common-container {
   margin: 0 auto;
-
-  @include desktop() {
-    max-width: 640px;
-  }
+  max-width: 640px;
 
   @include mobile {
-    max-width: 320px;
+    max-width: 272px;
   }
 }
 
 /* Responsive media */
 
-@mixin desktop {
-  @media (max-width: $desktop) {
-    @content;
-  }
-}
 @mixin mobile {
   @media (max-width: $mobile) {
     @content;
@@ -29,26 +21,74 @@
 /* Fonts */
 
 @mixin H1 {
-  font-size: $H1-font-size;
-  font-weight: $H1-font-weight;
-  line-height: $H1-line-height;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 130%;
   color: $text-primary;
+
+  @include mobile {
+    font-size: 22px;
+  }
+}
+
+@mixin H2 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 130%;
+  color: $text-primary;
+
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+@mixin H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  color: $text-primary;
+
+  @include mobile {
+    font-size: 18px;
+
+  }
+}
+
+@mixin H4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  color: $text-primary;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 @mixin B1 {
-  font-size: $B1-font-size;
-  font-weight: $B1-font-weight;
-  line-height: $B1-line-height;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  @include mobile {
+    font-size: 14px;
+  }
+  
 }
 
 @mixin B2 {
-  font-size: $B2-font-size;
-  font-weight: $B2-font-weight;
-  line-height: $B2-line-height;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  @include mobile {
+    font-size: 12px;
+  }
 }
 
 @mixin B3 {
-  font-size: $B3-font-size;
-  font-weight: $B3-font-weight;
-  line-height: $B3-line-height;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 150%;
+  @include mobile {
+    font-size: 11px;
+  }
 }

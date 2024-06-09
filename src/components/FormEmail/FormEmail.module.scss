@@ -4,22 +4,31 @@
 .form {
   display: flex;
   gap: 10px;
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
 
   &__input {
     width: 324px;
     height: 45px;
     outline: none;
-    border-radius: 8px;
-    border: 1px solid #c0c0c0;
-    padding-left: 20px;
     @include B2;
     color: $text-primary;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    padding-left: 20px;
     cursor: pointer;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 
 .submit {
-  position: relative;
+   position: relative;
 
   &__button {
     width: 98px;
@@ -37,11 +46,20 @@
     &:hover {
       background-color: $cta-hover;
     }
+    @include mobile {
+      width: 100%;
+      font-size: 14px;
+      padding-left: 112px;
+    }
   }
 
   &__icon {
     position: absolute;
     top: 15px;
     left: 60px;
+    @include mobile {
+      top: 37%;
+      left: 54%;
+    }
   }
 }

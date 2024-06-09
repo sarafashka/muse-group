@@ -33,8 +33,8 @@ const Products = () => {
                   <div className={product__details}>
                     <button className={product__details_button}>Read more</button>
                     <svg className={product__details_icon} width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_45_240)">
-                        <path d="M5.25 3.125L9.625 7.5L5.25 11.875" stroke="#3366FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <g clipPath="url(#clip0_45_240)">
+                        <path d="M5.25 3.125L9.625 7.5L5.25 11.875" stroke="#3366FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         </g>
                       <defs>
                         <clipPath id="clip0_45_240">
