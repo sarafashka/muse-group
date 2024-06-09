@@ -16,7 +16,7 @@ export const socialLinks = [
   { icon: facebook, url: '', caption: 'facebook' },
 ];
 
-export const products = [
+export const productsList = [
   {
     color: '#FFC800',
     name: 'Ultimate Guitar',
@@ -26,8 +26,7 @@ export const products = [
   {
     color: '#2E68C0',
     name: 'MuseScore',
-    description:
-      'Create, play back, and print sheet music with free open source notation software.',
+    description: `Create, play back, and print sheet music with free open source notation software.`,
   },
   {
     color: '#EA1542',
@@ -40,3 +39,10 @@ export const products = [
     description: "The world's most popular audio editing and recording app.",
   },
 ];
+
+export const heroSection = {
+  title: 'Muse Group Frontend Academy',
+  description:
+    'Our academy offers a transformative learning experience designed to empower you with the skills and knowledge needed to succeed in the ever-evolving field of frontend development.',
+  caption: 'Are you ready to turn your passion for technology into a thriving career?',
+};

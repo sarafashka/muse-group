@@ -1,46 +1,39 @@
-import { socialLinks } from "../../content/content";
+import { socialLinks, heroSection } from "../../content/content";
 import Footer from "../Footer";
 import FormEmail from "../FormEmail";
 import Header from "../Header";
-import ProductCard from "../ProductCard";
+import Products from "../Products";
 
 import styles from './App.module.scss';
 
-const { hero, hero__description, hero__image, hero__caption, hero__wrapper, social, social__description, social__links } = styles;
+const { hero, hero__description, hero__image, hero__caption, hero__wrapper, social, social__description, social__links, social__icon } = styles;
 
 const App = () => {
   return (
     <>  
       <Header/>
 
+      <main>
       <section className={hero__wrapper}>
         <div className="container">
           <div className={hero}>
-              <h1>Muse Group Frontend Academy</h1>
-
-              <p className={hero__description}>Our academy offers a transformative learning experience designed to empower
-                you with the skills and knowledge needed to succeed in the ever-evolving field
-                of frontend development.</p>
-
+              <h1>{heroSection.title}</h1>
+              <p className={hero__description}>{heroSection.description}</p>
               <div className={hero__image}></div>
-
-              <p className={hero__caption}>Are you ready to turn your passion for technology into a thriving career?</p>
-
+              <p className={hero__caption}>{heroSection.caption}</p>
               <FormEmail/>
           </div>
         </div>
       </section>
 
-      <section className="container">
-          <ProductCard/>
-      </section>
+      <Products/>
 
-      <section className={social}>
-        <div className="container">
+      <section className="container">
+        <div className={social}>
           <div className = {social__links}>
             {socialLinks.map((item, index)=> (
                   <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
-                     <img src={item.icon} alt={item.caption}/>
+                     <img className={social__icon} src={item.icon} alt={item.caption}/>
               </a>
             ))}
           </div>
@@ -49,10 +42,10 @@ const App = () => {
            alongside fellow learners and industry professionals as you embark on this exciting journey together.</div>
         </div>
       </section>
+      </main>
 
-      <footer><Footer/></footer>
-      
-      </>
+      <Footer/>
+    </>
   )
 }
 

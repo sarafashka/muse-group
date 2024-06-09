@@ -28,6 +28,13 @@
 
 /* Fonts */
 
+@mixin H1 {
+  font-size: $H1-font-size;
+  font-weight: $H1-font-weight;
+  line-height: $H1-line-height;
+  color: $text-primary;
+}
+
 @mixin B1 {
   font-size: $B1-font-size;
   font-weight: $B1-font-weight;
