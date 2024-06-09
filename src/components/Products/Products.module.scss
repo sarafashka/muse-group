@@ -68,6 +68,12 @@
     @include B1;
     @include mobile {
       font-size: 16px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical; 
+      overflow: hidden; 
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
     }
   }
 
