@@ -1,8 +1,3 @@
-import instagram from '../assets/svg/icon.svg';
-import telegram from '../assets/svg/Telegram.svg';
-import facebook from '../assets/svg/facebook.svg';
-import linkedIn from '../assets/svg/LinkedIn.svg';
-
 export const footerLinks = [
   { name: 'Help Center', url: 'https://support.animaapp.com/en/' },
   { name: 'Privacy Policy', url: 'https://forum.animaapp.com/privacy' },
@@ -10,10 +5,10 @@ export const footerLinks = [
 ];
 
 export const socialLinks = [
-  { icon: instagram, url: '', caption: 'instagram' },
-  { icon: telegram, url: '', caption: 'telegram' },
-  { icon: linkedIn, url: '', caption: 'linkedin' },
-  { icon: facebook, url: '', caption: 'facebook' },
+  { icon: './socialIcons.svg#icon', url: '#', caption: 'instagram' },
+  { icon: './socialIcons.svg#Telegram', url: '#', caption: 'telegram' },
+  { icon: './socialIcons.svg#LinkedIn', url: '#', caption: 'linkedin' },
+  { icon: './socialIcons.svg#facebook', url: '#', caption: 'facebook' },
 ];
 
 export const productsList = [

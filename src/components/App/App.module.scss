@@ -67,7 +67,12 @@
     }
   }
   &__icon {
-    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $cta;
+    &:hover {
+      fill: $cta-hover;
+    }
   }
   &__description {
     text-align: center;

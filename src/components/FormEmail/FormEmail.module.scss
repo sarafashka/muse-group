@@ -4,7 +4,7 @@
 .form {
   display: flex;
   gap: 10px;
-  @include mobile {
+  @include small-mobile {
     width: 100%;
     flex-direction: column;
     gap: 8px;
@@ -22,6 +22,9 @@
     cursor: pointer;
 
     @include mobile {
+      width: 60vw;
+    }
+    @include small-mobile {
       width: 100%;
     }
   }
@@ -46,7 +49,7 @@
     &:hover {
       background-color: $cta-hover;
     }
-    @include mobile {
+    @include small-mobile {
       width: 100%;
       font-size: 14px;
       padding-left: 112px;

@@ -30,7 +30,9 @@ const App = () => {
           <div className = {social__links}>
             {socialLinks.map((item, index)=> (
                   <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
-                     <img className={social__icon} src={item.icon} alt={item.caption}/>
+                      <svg className={social__icon}>
+                        <use xlinkHref={item.icon} ></use>
+                      </svg>
               </a>
             ))}
           </div>
